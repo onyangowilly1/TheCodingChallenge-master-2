@@ -1,0 +1,360 @@
+{"quiz":
+    [{"name": "Variables",
+     "forTutorial": "Hello World",
+     "introText": "For this first tutorial we will make a small program that all programmers knows very well, and that is to say \"Hello World!\"",
+     "iconName": "quizVariables.png",
+     "endQuizText": "Congratulations!\r\r You've just made your first app!\r\rLet's try some more :-)",
+     "quizquestions":
+     [{"question": "There are two types of variables in Swift.\r\r Immutables are declared with \"let\" and cannot change once they have been given a value.\r\r Mutable are declared with \"var\" can be changed at any time. \r\r If you want to make a constant variable called \"welcomeMessage\" how would you declare it?",
+      "option1": "var \"welcomeMessage\": String",
+      "option2": "let welcomeMessage: String",
+      "option3": "var welcomeMessage: Int",
+      "option4": "let welcomeMessage: String",
+      "correctOption": 4,
+      "correctAnswerText": "\r\r You use the keyword \"let\" to make a variable that cannot change.\r\r The \": String\" indicates that this variable will contain a text string."},
+      {"question": "You want to create a constant variable called name that will have the value of \"Carlos\" assigned to it.\r\r How do you declare this variable?",
+      "option1": "var name = \"Carlos\"",
+      "option2": "let name: String = \"Carlos\"",
+      "option3": "var name = Carlos",
+      "option4": "let name: String = Carlos",
+      "correctOption": 2,
+      "correctAnswerText": "\r\r You have assigned a constant to the Variable with let name = \"Carlos\"\r\r If you give the variable a value when you are creating it, you don't have to declare the Type also. The computer will figure this out automatically.\r\r So both of the lines of code below are valid:\r\r\r\r  let name = \"Carlos\"\r\r  let name: String = \"Carlos\""},
+      {"question": "You assign types to objects you make in code. These types tells the computer what sort of information the object contains.\r\r Which of the below is a valid type if you want the object to contain text?",
+      "option1": "var name: Carlos",
+      "option2": "var month: Int",
+      "option3": "var message: String",
+      "option4": "var textDescription: Double",
+      "correctOption": 3,
+      "correctAnswerText": "\r\r For declaring text we set the type as a (text) String.\r\r Int (integer) is used for numbers 1, 2, 5, 1928 etc. Double is used for numbers with one decimal place.\r\r Carlos is probably someones type as well, but not in coding"},
+      {"question": "Which of the declarations below are valid if you want to create a variable the will hold a number of 10.2?",
+      "option1": "var number: Float = 10.2",
+      "option2": "let number: Int = 10.2",
+      "option3": "var number: Double = 10.2",
+      "option4": "let number: String = \"10.2\"",
+      "correctOption": 3,
+      "correctAnswerText": " \r\r For numbers with one decimal place we use Double as a Type.\r\r Float number also have decimals and are similar to Double, but with less accuracy. Float numbers are usually used if you have tens of thousands of numbers, due to performance issues."},
+      {"question": "Look at the code below. There are two name variables created and then one is printed.\r\r What will be printed out in the end?\r\r\r let name = \"Jeroen\" \r var newName = \"Karl\" \r\r name = newName\r\r print(name)",
+      "option1": "\"Karl\"",
+      "option2": "Jeroen",
+      "option3": "Karl",
+      "option4": "None of the above",
+      "correctOption": 2,
+      "correctAnswerText": " \r\r Since the variable \"name\" was declared a constant with the keyword \"let\" it couldn't be changed after it had gotten its value."},
+      {"question": "Boolean is another type in Swift that you can asign to an object. This value can be either true or false.\r\r If you want to create a variable with the name \"readyToPrint\" and give it a value of false, how would you write that in code?",
+      "option1": "var boolean = \"readyToPrint\"",
+      "option2": "var readyToPrint: Bool = true",
+      "option3": "var readyToPrint: Bool = false",
+      "option4": "var readyToPrint: Bool = \"false\"",
+      "correctOption": 3,
+      "correctAnswerText": " \r\r Boolean variables are goof to use when you only want to do something is something else is true or false. For example:\r\r \"Only print the page if there is enough toner in the printer\""},
+      {"question": "We want to print a text string for our project. Will the code below allow us to print the string?\r\r var message = \"Hello World!\"\r\rif message != nil {\r  readyToPrint == true\r}\r\r if readyToPrint == true then printer.print(message)",
+      "option1": "Yes, it will print out \"Hello World!\"",
+      "option2": "No",
+      "option3": "Only if the printer is on",
+      "option4": "Yes, it will print out \"message\"",
+      "correctOption": 1,
+      "correctAnswerText": " \r\r The printer (if it is on) will print out the message"},
+      {"question": "Which of the lines of code below are declared wrong?\r\r let myHomeTown = \"Oslo\"\r\r var number: Int = 2.0\r\r var bestSuperHero: String = \"Batman\" \r\r let temperature = 14.5",
+      "option1": "let myHomeTown = \"Oslo\"",
+      "option2": "var number: Int = 2.0",
+      "option3": "var bestSuperHero: String = \"Batman\"",
+      "option4": "let temperature = 14.5",
+      "correctOption": 2,
+      "correctAnswerText": " \r\r The value that was assigned to the variable \"number\" is a Double/Float and not an Int (Integer)"},
+      {"question": "What does the code below print out?\r\r var i = 1.0\r\r var k = 5\r\r var i = i + k\r\r print(i)",
+      "option1": "1.0",
+      "option2": "6",
+      "option3": "6.0",
+      "option4": "It returns an error",
+      "correctOption": 4,
+      "correctAnswerText": " \r\r It is not possible to do addition, multiplication or division with different type of number variables. In our case \"i\" is an Int and \"k\" is a Double.\r\r To be able to do this we can convert the Int to a Double Wer do that like this: \r\r var i = i + Int(k)"},
+      {"question": "Which of the types below are standard types used in Swift coding?",
+      "option1": "String",
+      "option2": "NSURL",
+      "option3": "UIColor",
+      "option4": "All of them are valid types",
+      "correctOption": 4,
+      "correctAnswerText": " \r\r Yes, all of them are valid types for variables when coding in Swift.\r\r  String - hold a text string \r\r  NSURL - holds an URL link, which can either be to a location on your iphone, computer or web \r\r  UIColor - used when you want a specific color to have a variable, for example: \r\r   var favoriteColor: UIColor = UIColor.blueColor()"}]
+     },
+     {
+     "name": "Conditionals",
+     "forTutorial": "Conditional",
+     "introText": "For this Quizz we will have a look at Conditional like Loop statements, Branch statements,Control  transfer statement, if statments,while,for-in among others",
+     "iconName": "quizConditionals.png",
+     "endQuizText": "Congratulations!\r\r You've just made your first app!\r\rLet's try some more :-)",
+     "quizquestions": [{
+                       "question": "when You are given a number for example 2. Print even if the number is even or odd otherwise. \r\r let number = 2, which code is the right expression for if else statement",
+                       "option1": "if number % 2 == 0 {  \r\r print(\"even\") \r\r  } else { \r\r print(\"odd\") \r\r }",
+                       "option2": "if number % 2 == 0 {  \r\r print(\"even\")",
+                       "option3": "if number % 2 == 0 { \r\r print(\"odd\") \r\r }",
+                       "option4": "if number % 2 == 0 {  \r\r print(\"even\") \r\r  } if { \r\r print(\"odd\") \r\r }",
+                       "correctOption": 4,
+                       "correctAnswerText": "\r\r You use the keyword \"let\" to make a variable that cannot change.\r\r The \": String\" indicates that this variable will contain a text string."
+                       }, {
+                       "question": "You are given two numbers a and b print the largest one: var a = 11 , var b = 22.,which of the code is used to print this",
+                       "option1": "if a > b { \r\r print(a) \r\r } else { \r\r print(b) \r\r }",
+                       "option2": "if a < b { \r\r print(a) \r\r } else { \r\r print(b) \r\r }",
+                       "option3": "if a =< b { \r\r print(a) \r\r } else { \r\r print(b) \r\r }",
+                       "option4": "if a = b { \r\r print(a) \r\r } else { \r\r print(b) \r\r }",
+                       "correctOption": 1,
+                       "correctAnswerText": "\r\r You have printed 22 as the largest number using if a > b { \r\r print(a) \r\r } else { \r\r print(b) \r\r } "
+                       }, {
+                       "question": "Which statement occurs only in the body of a function or method definition and causes program execution to return to the calling function or method.",
+                       "option1": "Continue",
+                       "option2": "Fall through",
+                       "option3": "Return",
+                       "option4": "Break",
+                       "correctOption": 3,
+                       "correctAnswerText": "A return statement occurs only in the body of a function or method definition  and causes program execution to return to calling function or method."
+                       }, {
+                       "question": "Which statement ends program execution of a loop or a swift statement.",
+                       "option1": "Continue",
+                       "option2": "Break ",
+                       "option3": "Fallthrough",
+                       "option4": "All of the above",
+                       "correctOption": 2,
+                       "correctAnswerText": " A break statement ends program execution of a loop or a switch statement."
+                       }, {
+                       "question": "which of the statement can change the order in which code in our program",
+                       "option1": "Loop statements",
+                       "option2": "Branch statements",
+                       "option3": "Control  transfer statements ",
+                       "option4": "All of the above",
+                       "correctOption": 3,
+                       "correctAnswerText": " Control transfer statements can change the order in which code in program is executed by unconditionally transferring program control from one piece of code to another."
+                       }, {
+                       "question": "Which statement allow certain blocks of code to be executed depending on the value of a control expression.",
+                       "option1": "switch",
+                       "option2": "if",
+                       "option3": "for",
+                       "option4": "for-in",
+                       "correctOption": 1,
+                       "correctAnswerText": " a switch statement allows certain blocks of code to be executed depending on the value of a control expression."
+                       }, {
+                       "question": "Whichstatement allows a block of code to be executed once for each item in a collection(or any type) that conforms to the Sequence protocol",
+                       "option1": "while",
+                       "option2": "do-while",
+                       "option3": "for",
+                       "option4": "for-in",
+                       "correctOption": 4,
+                       "correctAnswerText": "  A for-in statement allows a block of code to be executed once for each item in a collection ( or any type) that conforms to the Sequence protocol."
+                       }, {
+                       "question": "Which statement allows a block of code to be executed repeatedly while incrementing a counter, as long as a condition remains true",
+                       "option1": "while",
+                       "option2": "do-while",
+                       "option3": "for",
+                       "option4": "for-in",
+                       "correctOption": 3,
+                       "correctAnswerText": " A for statement allow a block of code to be executed repeatedly while incrementally a counter, as long as a condition remain true."
+                       }, {
+                       "question": "Which statement(s) will allow a block of code to be executted repeatedly, depending on the conditions specified in the loop.",
+                       "option1": "Loops",
+                       "option2": "Branch",
+                       "option3": "Control transfer",
+                       "option4": "All the above",
+                       "correctOption": 1,
+                       "correctAnswerText": "loop statements allow a block of code to be executed repeatedly,depending on the conditions  specified in the loop."
+                       }, {
+                       "question": "which of the following is/are control flow statements in swift",
+                       "option1": "Loop",
+                       "option2": "Branch",
+                       "option3": "Control Transfer",
+                       "option4": "All of the above",
+                       "correctOption": 4,
+                       "correctAnswerText": " There are there type of control flow statements in swift:loop statement,branch statements and control transfer statements"
+                       }]
+     },
+     {
+     "name": "Functions",
+     "forTutorial": "Functions",
+     "introText": "For this Quizz we will have a look at Functions like Nested Function, External Function,Parametric Functions,Default Parameters,Local Parameters ,among others and their examples",
+     "iconName": "quizFunctions.png",
+     "endQuizText": "Congratulations!\r\r You've just completed the Function Quizz!\r\rLet's try some more :-)",
+     "quizquestions": [{
+                       "question": "Which of the statement is true for Functions declared as Void data types.",
+                       "option1": "will return something",
+                       "option2": "won’t return anything",
+                       "option3": "may or may not return anything",
+                       "option4": "All the above.",
+                       "correctOption": 2,
+                       "correctAnswerText": "Functions declared as Void data types won't return anything."
+                       }, {
+                       "question": "Which of the statement is true for A variadic parameter? ",
+                       "option1": "Accepts nil",
+                       "option2": "More values of a different type.",
+                       "option3": "Accepts zero or more values of a specified type",
+                       "option4": "Non of the above",
+                       "correctOption": 3,
+                       "correctAnswerText": "A variadic parameter accepts zero or more values of a specified type"
+                       }, {
+                       "question": "Func inputstr(name: String) -> String { \r\r return name \r\r }, Given the above function,it has been declared as?",
+                       "option1": "string datatype",
+                       "option2": "Void datatype",
+                       "option3": "Int datatype",
+                       "option4": "All the above",
+                       "correctOption": 1,
+                       "correctAnswerText": "Here the function is declared as string datatype."
+                       }, {
+                       "question": "which of the Code is an example of Default Parameter value of  function?.",
+                       "option1": "func someFunction(parameterWithDefault: Int = 12) \r\r { \r\r }",
+                       "option2": "func someFunction(parameterWithDefault) \r\r { \r\r } ",
+                       "option3": "func someFunction(parameterWithDefault: Int) \r\r { \r\r }",
+                       "option4": "All of the above",
+                       "correctOption": 1,
+                       "correctAnswerText": "A return statement occurs only in the body of a function or method definition  and causes program execution to return to calling function or method."
+                       }, {
+                       "question": "which of the code represent  an example  of Local parameter names that  can be accessed inside the function alone,func sample(number: Int) { \r\r print(number) \r\r }",
+                       "option1": "func sample(number: Int) { \r\r print(number) \r\r }",
+                       "option2": "func sample(number: Int)",
+                       "option3": "func sample(number: Int) { \r\r print() \r\r }",
+                       "option4": "Integer",
+                       "correctOption": 1,
+                       "correctAnswerText": "func sample(number: Int) { \r\r print(number) \r\r } is an example of Local parameter."
+                       }, {
+                       "question": "Pick the option that best fills the banks space provided:The functions defined in side the bodies of  others functions,are known as ?",
+                       "option1": "Parametric Functions ",
+                       "option2": "External Function",
+                       "option3": "Nested Function",
+                       "option4": "Default Function",
+                       "correctOption": 3,
+                       "correctAnswerText": "A nested function provides the facility to call the outer function by invoking the inside function."
+                       }, {
+                       "question": "Which of the following parameter are used only within the body of the function itself?",
+                       "option1": "Local Parameters",
+                       "option2": "External Parameters",
+                       "option3": "Variable parameters",
+                       "option4": "Default Parameters",
+                       "correctOption": 1,
+                       "correctAnswerText": "Local Parameters are used only within the body of the function itself."
+                       }, {
+                       "question": "Choose the option that best fills the blank space  provided:Typed values that the function takes as  input are known as ?",
+                       "option1": "Parameters ",
+                       "option2": "Return Type",
+                       "option3": "Calling Function",
+                       "option4": "Initialiser",
+                       "correctOption": 1,
+                       "correctAnswerText": " Type values that the function takes as input are known as parameters."
+                       }, {
+                       "question": "Which of the function is an example of an external parameter name ?",
+                       "option1": "func someFunction(externalParameterName localParameterName:  Int ) { \r\r }",
+                       "option2": "func someFunction(Int ) { \r\r }",
+                       "option3": "func ParameterName localParameterName:  Int ) { \r\r  }",
+                       "option4": "func externalParameterName localParameterName:  Int ) { \r\r }",
+                       "correctOption": 1,
+                       "correctAnswerText": "Welcome, Willy! is the output of func sayHelloAgain(personName: String) \r\r Sting{  \r\r Return “Welcome, ” + personName + “!” \r\r } \r\r print(sayHelloAgain(“Willy”))."
+                       }, {
+                       "question": "What will be the output of the code given below? \r\r func sayHelloAgain(personName: String) \r\r Sting{  \r\r Return “Welcome, ” + personName + “!” \r\r } \r\r print(sayHelloAgain(“Willy”))",
+                       "option1": "Welcome, +!",
+                       "option2": "Welcome, Willy! ",
+                       "option3": "Welcome, “!”",
+                       "option4": "Willy Welcome,",
+                       "correctOption": 2,
+                       "correctAnswerText": "Welcome, Willy! is the output of func sayHelloAgain(personName: String) \r\r Sting{  \r\r Return “Welcome, ” + personName + “!” \r\r } \r\r print(sayHelloAgain(“Willy”))."
+                       }, {
+                       "question": "Which of the answer is self-Contained chuck of code that perform a specific task?",
+                       "option1": "Structures",
+                       "option2": "Classes",
+                       "option3": "Variables",
+                       "option4": "Functions ",
+                       "correctOption": 4,
+                       "correctAnswerText": " Functions are self-Contained chuck of code that perform a specific task"
+                       }]
+     },
+     {
+     "name": "Outlets",
+     "forTutorial": "Functions",
+     "introText": "For this Quizz we will have a look at Functions like Nested Function, External Function,Parametric Functions,Default Parameters,Local Parameters ,among others and their examples",
+     "iconName": "quizOutlets.png",
+     "endQuizText": "Congratulations!\r\r You've just completed the Function Quizz!\r\rLet's try some more :-)",
+     "quizquestions": [{
+                       "question": "Which of the statement is true for Functions declared as Void data types.",
+                       "option1": "will return something",
+                       "option2": "won’t return anything",
+                       "option3": "may or may not return anything",
+                       "option4": "All the above.",
+                       "correctOption": 2,
+                       "correctAnswerText": "Functions declared as Void data types won't return anything."
+                       }, {
+                       "question": "Which of the statement is true for A variadic parameter? ",
+                       "option1": "Accepts nil",
+                       "option2": "More values of a different type.",
+                       "option3": "Accepts zero or more values of a specified type",
+                       "option4": "Non of the above",
+                       "correctOption": 3,
+                       "correctAnswerText": "A variadic parameter accepts zero or more values of a specified type"
+                       }, {
+                       "question": "Func inputstr(name: String) -> String { \r\r return name \r\r }, Given the above function,it has been declared as?",
+                       "option1": "string datatype",
+                       "option2": "Void datatype",
+                       "option3": "Int datatype",
+                       "option4": "All the above",
+                       "correctOption": 1,
+                       "correctAnswerText": "Here the function is declared as string datatype."
+                       }, {
+                       "question": "which of the Code is an example of Default Parameter value of  function?.",
+                       "option1": "func someFunction(parameterWithDefault: Int = 12) \r\r { \r\r }",
+                       "option2": "func someFunction(parameterWithDefault) \r\r { \r\r } ",
+                       "option3": "func someFunction(parameterWithDefault: Int) \r\r { \r\r }",
+                       "option4": "All of the above",
+                       "correctOption": 1,
+                       "correctAnswerText": "A return statement occurs only in the body of a function or method definition  and causes program execution to return to calling function or method."
+                       }, {
+                       "question": "which of the code represent  an example  of Local parameter names that  can be accessed inside the function alone,func sample(number: Int) { \r\r print(number) \r\r }",
+                       "option1": "func sample(number: Int) { \r\r print(number) \r\r }",
+                       "option2": "func sample(number: Int)",
+                       "option3": "func sample(number: Int) { \r\r print() \r\r }",
+                       "option4": "Integer",
+                       "correctOption": 1,
+                       "correctAnswerText": "func sample(number: Int) { \r\r print(number) \r\r } is an example of Local parameter."
+                       }, {
+                       "question": "Pick the option that best fills the banks space provided:The functions defined in side the bodies of  others functions,are known as ?",
+                       "option1": "Parametric Functions ",
+                       "option2": "External Function",
+                       "option3": "Nested Function",
+                       "option4": "Default Function",
+                       "correctOption": 3,
+                       "correctAnswerText": "A nested function provides the facility to call the outer function by invoking the inside function."
+                       }, {
+                       "question": "Which of the following parameter are used only within the body of the function itself?",
+                       "option1": "Local Parameters",
+                       "option2": "External Parameters",
+                       "option3": "Variable parameters",
+                       "option4": "Default Parameters",
+                       "correctOption": 1,
+                       "correctAnswerText": "Local Parameters are used only within the body of the function itself."
+                       }, {
+                       "question": "Choose the option that best fills the blank space  provided:Typed values that the function takes as  input are known as ?",
+                       "option1": "Parameters ",
+                       "option2": "Return Type",
+                       "option3": "Calling Function",
+                       "option4": "Initialiser",
+                       "correctOption": 1,
+                       "correctAnswerText": " Type values that the function takes as input are known as parameters."
+                       }, {
+                       "question": "Which of the function is an example of an external parameter name ?",
+                       "option1": "func someFunction(externalParameterName localParameterName:  Int ) { \r\r }",
+                       "option2": "func someFunction(Int ) { \r\r }",
+                       "option3": "func ParameterName localParameterName:  Int ) { \r\r  }",
+                       "option4": "func externalParameterName localParameterName:  Int ) { \r\r }",
+                       "correctOption": 1,
+                       "correctAnswerText": "Welcome, Willy! is the output of func sayHelloAgain(personName: String) \r\r Sting{  \r\r Return “Welcome, ” + personName + “!” \r\r } \r\r print(sayHelloAgain(“Willy”))."
+                       }, {
+                       "question": "What will be the output of the code given below? \r\r func sayHelloAgain(personName: String) \r\r Sting{  \r\r Return “Welcome, ” + personName + “!” \r\r } \r\r print(sayHelloAgain(“Willy”))",
+                       "option1": "Welcome, +!",
+                       "option2": "Welcome, Willy! ",
+                       "option3": "Welcome, “!”",
+                       "option4": "Willy Welcome,",
+                       "correctOption": 2,
+                       "correctAnswerText": "Welcome, Willy! is the output of func sayHelloAgain(personName: String) \r\r Sting{  \r\r Return “Welcome, ” + personName + “!” \r\r } \r\r print(sayHelloAgain(“Willy”))."
+                       }, {
+                       "question": "Which of the answer is self-Contained chuck of code that perform a specific task?",
+                       "option1": "Structures",
+                       "option2": "Classes",
+                       "option3": "Variables",
+                       "option4": "Functions ",
+                       "correctOption": 4,
+                       "correctAnswerText": " Functions are self-Contained chuck of code that perform a specific task"
+                       }]
+     }
+     ]
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splachBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Gzm-CL-nUK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashCodeChallenge" translatesAutoresizingMaskIntoConstraints="NO" id="imS-bI-Vg8">
+                                <rect key="frame" x="16" y="197" width="296" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="DtH-lr-OtF"/>
+                                    <constraint firstAttribute="width" constant="296" id="yyr-jt-djE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashClass" translatesAutoresizingMaskIntoConstraints="NO" id="hJZ-ku-6Qu">
+                                <rect key="frame" x="16" y="170" width="71" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="h7Z-rB-0FT"/>
+                                    <constraint firstAttribute="height" constant="19" id="rkK-Gg-9DQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hJZ-ku-6Qu" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="150" id="0Aj-X2-0m1"/>
+                            <constraint firstItem="Gzm-CL-nUK" firstAttribute="leading" relation="lessThanOrEqual" secondItem="imS-bI-Vg8" secondAttribute="trailing" constant="-312" id="7A3-rB-0Mq"/>
+                            <constraint firstItem="Gzm-CL-nUK" firstAttribute="leading" secondItem="imS-bI-Vg8" secondAttribute="trailing" constant="-385" id="7OA-rt-eh6"/>
+                            <constraint firstItem="hJZ-ku-6Qu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="8j9-Kj-o9c"/>
+                            <constraint firstAttribute="trailing" secondItem="Gzm-CL-nUK" secondAttribute="trailing" id="BDh-jF-wOh"/>
+                            <constraint firstItem="Gzm-CL-nUK" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="Ftq-w7-fz2"/>
+                            <constraint firstItem="hJZ-ku-6Qu" firstAttribute="leading" secondItem="imS-bI-Vg8" secondAttribute="leading" id="Je8-kg-F3I"/>
+                            <constraint firstItem="Gzm-CL-nUK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="VxD-wq-a2e"/>
+                            <constraint firstItem="Gzm-CL-nUK" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="YE9-gs-lww"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="imS-bI-Vg8" secondAttribute="bottom" constant="292" id="pah-36-a3U"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7OA-rt-eh6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splachBackground" width="414" height="736"/>
+        <image name="splashClass" width="151" height="38"/>
+        <image name="splashCodeChallenge" width="304" height="111"/>
+    </resources>
+</document>
